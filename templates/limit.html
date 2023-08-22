@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<form action="/limitnum" method="POST">
+
+    <p> ENTER the MONTHLY LIMIT to avoid over EXPENSES on FOOD</p> <br/>
+    <input type="number" name="number1" required/>
+    <p> ENTER the MONTHLY LIMIT to avoid over EXPENSES on ENTERTAINMENT</p> <br/>
+    <input type="number" name="number2" required/> 
+    <p> ENTER the MONTHLY LIMIT to avoid over EXPENSES on RENT</p> <br/>
+    <input type="number" name="number3" required/> 
+    <p> ENTER the MONTHLY LIMIT to avoid over EXPENSES on BUSINESS </p> <br/>
+    <input type="number" name="number4" required/> 
+    <p> ENTER the MONTHLY LIMIT to avoid over EXPENSES on EMI</p> <br/>
+    <input type="number" name="number5" required/>
+    
+    <p> ENTER the MONTHLY LIMIT to avoid over EXPENSES on OTHER</p> <br/>
+    <input type="number" name="number6" required/> <span> 
+        <button class="btn btn-warning" type="submit">ENTER</button>
+    </span>
+
+
+
+</form>
+{% endblock %}
